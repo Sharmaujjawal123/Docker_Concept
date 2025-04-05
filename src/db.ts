@@ -1,6 +1,6 @@
 import mongoose, { Schema, model } from 'mongoose';
-
-const mongoUrl: string = 'mongodb://mongohkrt:27017/myDatabase';
+import dotenv from 'dotenv';
+const mongoUrl: string =process.env.MONGO_URL ;
 
 // Connect to MongoDB
 mongoose.connect(mongoUrl)
